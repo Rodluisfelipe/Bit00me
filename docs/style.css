@@ -39,8 +39,11 @@ body{
  }
   
   li{
-   margin-right: 10px;
+   margin-right: 15px;
    display: inline;
+  }
+  li img{
+    width: 2.0em;
   }
   #cv{
     cursor: pointer;
