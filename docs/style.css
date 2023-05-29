@@ -107,6 +107,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
   }
 
 @media screen and (min-width: 600px){
