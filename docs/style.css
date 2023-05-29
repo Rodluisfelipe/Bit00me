@@ -17,6 +17,7 @@ body, html{
  width: 100%;
  }
  figure{
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,7 +119,16 @@ body, html{
     height: 50px;
     border-radius: 10px;
   }
-
+footer{
+  margin-top: 40px;
+    font-size: 1.0em;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+footer span{
+  color: red;
+}
 @media screen and (min-width: 600px){
   body{
     width: 100%;
