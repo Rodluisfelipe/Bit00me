@@ -1,237 +1,121 @@
-  @media screen and (max-width: 600px) {
-  /* Estilos para el encabezado */
-header {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+
+body{
+  font-family: 'Montserrat', sans-serif;
+
+ background: linear-gradient(to left, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+} 
+ 
+ header{
+ width: 100%;
+ }
+ figure{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f8f8f8;
-  padding: 1rem;
-}
-
-header h1 {
-  font-size: 2rem;
-}
-
-/* Estilos para la imagen del perfil */
-header img {
-  border-radius: 50%;
-  margin-right: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Estilos para la navegación */
-nav {
-  background-color: #333;
-  color: #fff;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0;
-  padding: 1rem;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Estilos para el contenido principal */
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-article p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-section {
-  margin-top: 2rem;
-}
-
-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-/* Estilos para la lista de proyectos */
-dl {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-dt {
-  font-weight: bold;
-  margin-top: 1rem;
-}
-
-dd {
-  margin: 0;
-}
-
-/* Estilos para la tabla de contacto */
-table {
-  border-collapse: collapse;
-  margin-top: 2rem;
-  width: 100%;
-}
-
-th,
-td {
-  border: 1px solid #ccc;
-  padding: 0.5rem;
-  text-align: left;
-}
-
-th {
-  background-color: #f1f1f1;
-}
-
-th:first-child,
-td:first-child {
-  width: 10%;
-}
-
-/* Estilos para el pie de página */
-footer {
-  background-color: #f8f8f8;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  padding: 1rem;
-}
-
-footer a {
-  color: #333;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}  
-
+  align-items: center;
+ }
+ 
+ #fotoPerfil{
+  width: 80%;
+  margin:20px auto;
+  border-radius: 50%;
+ }
+ h1{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+ }
+ #nav{
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+ }
+  
+  li{
+   margin-right: 10px;
+   display: inline;
+  }
+  #cv{
+    cursor: pointer;
+    border: white 3px solid;
+    width: 90%;
+    margin: 20px ;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
   }
-
-@media  screen and (min-width: 600px) and (max-width: 900px) {
+  #cv img{
+    width: 50px;
+    margin: 0;
+    justify-content: left;
+    position: absolute;
+  }
+  #cv #cursando{
+    display: flex;
+    justify-content: center;
+   
+  }
+  #cursando{
+    font-weight: bold;
+    color: white;
+  }
+  #cv:hover{
+    font-size: 20px;
+    transition: 0.5s;
+  }
+  article{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  article h2{
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+  }
+  article p{
+    text-align: center;
+    font-size: 1.0em;
+    font-weight: 600;
+    color: white;
+  }
   
-/* Estilos para el encabezado */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f8f8f8;
-  padding: 1rem;
-}
+  #miDiv a{
+    display: none;
+  }
+  #miDiv button{
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: white 3px solid;
+    width: 90%;
+    margin: 20px ;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-header h1 {
-  font-size: 2rem;
-}
-
-/* Estilos para la imagen del perfil */
-header img {
-  border-radius: 50%;
-  margin-right: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Estilos para la navegación */
-nav {
-  background-color: #333;
-  color: #fff;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0;
-  padding: 1rem;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Estilos para el contenido principal */
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-article p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-section {
-  margin-top: 2rem;
-}
-
-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-/* Estilos para la lista de proyectos */
-dl {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-dt {
-  font-weight: bold;
-  margin-top: 1rem;
-}
-
-dd {
-  margin: 1;
-}
-
-/* Estilos para la tabla de contacto */
-table {
-  border-collapse: collapse;
-  margin-top: 2rem;
-  width: 100%;
-}
-
-th,
-td {
-  border: 1px solid #ccc;
-  padding: 0.5rem;
-  text-align: left;
-}
-
-th {
-  background-color: #f1f1f1;
-}
-
-th:first-child,
-td:first-child {
-  width: 10%;
-}
-
-/* Estilos para el pie de página */
-footer {
-  background-color: #f8f8f8;
-  text-align: center;
-  padding: 1rem;
-}
-
-footer a {
-  color: #333;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-  
+@media screen and (min-width: 600px){
+  body{
+    width: 100%;
+  }
+  #contenedor{
+    width: 50%;
+    margin: auto;
+    
+  }
 }

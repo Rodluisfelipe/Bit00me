@@ -2,32 +2,36 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luis Felipe Rodriguez</title>
   </head>
   <body>
+    <div id="contenedor">
     <header>
       <figure>
-        <a href="#"><img
+        <a href="#"><img id="fotoPerfil"
             src="fotoPerfil.jpg"
             alt="Foto de perfil de Luis Rodriguez"
             width="300px"/>
         </a>
-        <figcaption>foto de perfil</figcaption>
+        <figcaption><h1>Luis Felipe Rodriguez Quinayas</h1></figcaption>
       </figure>
-      <h1>Luis Felipe Rodriguez Quinayas</h1>
+      
     </header>
     <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="#sobreMi">Acerca de</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+      <ul id="nav">
+        <li><a href="index.html"><img src="./github-logo-24.png" alt=""></a></li>
+        <li><a href="#sobreMi"><img src="./envelope-solid-24.png" alt="" ></a></li>
+        <li><a href="#contacto"><img src="./whatsapp-logo-24.png" alt=""></a></li>
+        <li><a href="#contacto"><img src="./linkedin-square-logo-24.png" alt=""></a></li>
       </ul>
     </nav>
     <main>
+      <div id="cv"> <img src="cvv.png" alt=""><a href="https://drive.google.com/file/d/14JzKzKtmg0N5eskTWPdWIOQFaWAE94Pq/view" target="_blank" id="cursando" >Curriculum</a></div>
       <article>
-        <h2 id="sobreMi">Biografia</h2>
+        <h2 id="sobreMi">- Biografia -</h2>
         <p>
           Estudiante de Ingenieria Informatica de la Universidad de la Sabana,
           actualmente cursando 2do semestre, con conocimientos en programacion
@@ -35,50 +39,12 @@
           CSS, Git, GitHub,entre otros.
         </p>
       </article>
-      <section>
-        <h2>proyectos de GitHub</h2>
-        <dl>
-          <dt><a href="https://robin98123.github.io/fundaci-n-semillas-dashboard-/" target="_blank">Fundacion Semillas</a></dt>
-          <dd>Este proyecto contiene un Demo de el dashboard para la fundación semillas, donde se podrá ver indicadores de las emociones del estudiante y donde encontrará un herramienta estudiantil para sus tareas dentro del campus educativo </dd>
-          <dt><a href="#" target="_blank">Proyecto 2</a></dt>
-          <dd>Descripcion del proyecto 2</dd>
-          <dt><a href="#" target="_blank">Proyecto 3</a></dt>
-          <dd>Descripcion del proyecto 3</dd>
-        </dl>
-      </section>
-      <section>
-        <h2>hobbies</h2>
-        <ul>
-          <li>Escuchar musica</li>
-          <li>Ver series</li>
-          <li>Ver peliculas</li>
-          <li>Leer</li>
-          <li>Programar</li>
-        </ul>
-        <h2 id="contacto">Informacion de contacto</h2>
-        <table>
-          <tr>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Edad</th>
-            <th>Correo</th>
-            <th>Telefono</th>
-          </tr>
-          <tb>
-            <td>Luis</td>
-            <td>Rodriguez</td>
-            <td>19</td>
-            <td>
-              <a href="mailto:luisroqu@unisabana.edu.co">Enviar mensaje</a>
-            </td>
-            <td>3000000000</td>
-          </tb>
-        </table>
-      </section>
-    </main>
-    <footer>
-      <p>redes sociales <a href="">Instagram</a> <a href="">Linkedin</a> <a</p>
-      <p>© 2023 Luis Rodriguez. Todos los derechos reservados.</p>
-    </footer>
+      <div id="miDiv">
+      <a href="https://www.ejemplo.com">Enlace</a>
+      <button onclick="copiarAlPortapapeles(this)">Copiar link del perfil</button>
+    </div>
+    
+    <script src="main.js"></script>
+</div>
   </body>
 </html>
